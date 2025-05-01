@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="James Vuong's Portfolio - Data Science Student and Developer" />
+    <meta name="keywords" content="portfolio, data science, machine learning, web development" />
+    <meta name="author" content="James Vuong" />
+    <title>James Vuong | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .info.legend {
+        padding: 6px 8px;
+        background: white;
+        background: rgba(255,255,255,0.8);
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: 5px;
+      }
+      .info.legend h4 {
+        margin: 0 0 5px;
+        color: #777;
+      }
+      .info.legend i {
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: 8px;
+        opacity: 0.7;
+      }
+    </style>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-content">
+        <a href="#home" class="nav-brand">JV</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <div class="social-links">
+            <a href="https://github.com/jvuo728" target="_blank" rel="noopener noreferrer" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/james-vuong-2748a4293/" target="_blank" rel="noopener noreferrer" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home">
+      <div class="header-content">
+        <div class="header-text">
+          <h1>Hi, I'm James!</h1>
+          <div class="typing-text">
+            <span>I'm a</span>
+            <span class="typing-words">
+              <span>data scientist</span>
+              <span>machine learning enthusiast</span>
+              <span>software developer</span>
+            </span>
+          </div>
+          <p class="subtitle">based in Berkeley, CA.</p>
+        </div>
+        <div class="profile-container">
+          <img src="assets/profile.jpg" alt="James Vuong" class="profile-image">
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>More about me</h2>
+      <div class="about-content">
+        <p>
+          I am an undergraduate student at UC Berkeley studying Data Science with a passion for machine learning, 
+          sports science, and real-time 3D rendering. I love building data-driven applications that solve real-world 
+          problems and improve people's lives.
+        </p>
+        <p>
+          During my free time, I enjoy calisthenics, exploring new technologies, and working on personal projects 
+          that combine my interests in data science and software development.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3>SFUSD Student Enrollment Optimization</h3>
+        <p>
+          Developed a clustering model to assign San Francisco families to elementary schools, optimizing for diversity and socioeconomic equity using geographic, demographic, and census data.
+        </p>
+        <div class="project-demo">
+          
+          <div class="map-container">
+            <div id="map" style="height: 500px; width: 100%;"></div>
+          </div>
+        </div>
+        <div class="project-tech">
+          <span>Python</span>
+          <span>Machine Learning</span>
+          <span>Data Analysis</span>
+        </div>
+        <a href="https://deepnote.com/app/datathon-fall-2024/Datathon-Fall-2024-f5e651ad-5eee-402d-a771-d60f326b92f5?utm_content=f5e651ad-5eee-402d-a771-d60f326b92f5&__run=true" target="_blank" class="project-link">
+          View Full Project →
+        </a>
+      </div>
+
+      <div class="project">
+        <h3>3D Model Viewer</h3>
+        <p>
+          Built a Three.js viewer for interactive CAD models with measurement
+          tools and REST API integration.
+        </p>
+        <div class="project-tech">
+          <span>Three.js</span>
+          <span>JavaScript</span>
+          <span>REST API</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <div class="contact-links">
+        <a href="mailto:j.vuong@berkeley.edu" target="_blank" class="contact-link">
+          <span class="link-label">Email</span>
+          <span class="link-value">j.vuong@berkeley.edu</span>
+        </a>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="visualization.js"></script>
+    <script src="map.js"></script>
+  </body>
+</html>

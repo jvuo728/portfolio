@@ -7,6 +7,9 @@
     <meta name="keywords" content="portfolio, data science, machine learning, web development" />
     <meta name="author" content="James Vuong" />
     <title>James Vuong | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="assets/dragon-white.svg">
+    <link rel="alternate icon" type="image/png" href="assets/dragon-white.png">
+    <link rel="mask-icon" href="assets/dragon-white.svg" color="#a78bfa">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -41,7 +44,9 @@
   <body>
     <nav>
       <div class="nav-content">
-        <a href="#home" class="nav-brand">JV</a>
+        <a href="#home" class="nav-brand">
+          <img src="assets/dragon-white.svg" alt="Dragon Logo">
+        </a>
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
@@ -63,11 +68,12 @@
         <div class="header-text">
           <h1>Hi, I'm James!</h1>
           <div class="typing-text">
-            <span>I'm a</span>
+            <span>I'm a </span>
             <span class="typing-words">
               <span>data scientist</span>
               <span>machine learning enthusiast</span>
               <span>software developer</span>
+              <span>calisthenics performer</span>
             </span>
           </div>
           <p class="subtitle">based in Berkeley, CA.</p>
@@ -82,13 +88,15 @@
       <h2>More about me</h2>
       <div class="about-content">
         <p>
-          I am an undergraduate student at UC Berkeley studying Data Science with a passion for machine learning, 
-          sports science, and real-time 3D rendering. I love building data-driven applications that solve real-world 
-          problems and improve people's lives.
+          Hi! I'm an undergraduate student at <span class="about-highlight">UC Berkeley</span> studying Data Science. 
+          I'm curious about how technology can help us better understand the world and improve people's lives,
+          especially in areas like <span class="about-highlight">health, learning, and human performance</span>.
         </p>
         <p>
-          During my free time, I enjoy calisthenics, exploring new technologies, and working on personal projects 
-          that combine my interests in data science and software development.
+          Right now, I'm exploring different parts of <span class="about-highlight">data science and software development</span> through hands-on projects, 
+          new tools, and experimentation. 
+          Outside of academics, I love to practice <span class="about-highlight">calisthenics</span>, travel, learn new skills, 
+          and find new ways to challenge myself physically and mentally.
         </p>
       </div>
     </section>
@@ -96,9 +104,12 @@
     <section id="projects">
       <h2>My Projects</h2>
       <div class="project">
-        <h3>SFUSD Student Enrollment Optimization</h3>
+        <h3>Clustering-Based School Assignment Model for SFUSD</h3>
         <p>
-          Developed a clustering model to assign San Francisco families to elementary schools, optimizing for diversity and socioeconomic equity using geographic, demographic, and census data.
+          As part of UC Berkeley’s Fall 2024 Datathon, where my team won 2nd place, I helped develop a model to assign San Francisco students to elementary schools 
+          in a way that promoted racial diversity and income equity. We used demographic, income, and census data to build a permutation-based 
+          clustering algorithm and visualized the results using GeoPandas and Folium. The project combined data science, geospatial analysis, 
+          and a strong emphasis on social impact.
         </p>
         <div class="project-demo">
           

@@ -204,15 +204,10 @@ header::before {
   height: 1.2em;
 }
 
-.typing-words span {
-  display: none;
-  white-space: nowrap;
-}
-
-.typing-words span::after {
-  content: '|';
-  margin-left: 2px;
-  animation: blink 1s infinite;
+.typing-cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink 1s steps(1) infinite;
 }
 
 @keyframes blink {
@@ -549,7 +544,7 @@ h3 {
 
 #map {
   width: 100%;
-  height: 100%;
+  height: 500px;
 }
 
 .info {

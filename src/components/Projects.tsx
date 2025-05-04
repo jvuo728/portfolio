@@ -5,6 +5,34 @@ const Projects: React.FC = () => (
   <section id="projects">
     <h2>My Projects</h2>
     <div className="project">
+      <h3>Relativity Space: 3D Model Renderer (Lead Frontend Developer)</h3>
+      <p>
+        <b>My Contribution:</b> As the <b>lead frontend developer</b> on a team contracted by <b>Relativity Space</b>, I architected and built the interactive 3D CAD model renderer using React, Three.js, and TypeScript. The final product was delivered as part of a secure web platform with user authentication and a Postgres database. This embedded viewer is an adaptation of my core contribution, showcasing the renderer's interactive features for my portfolio.
+      </p>
+      <div className="project-demo">
+        <iframe
+          src="https://jvuo728.github.io/three.js-viewer/"
+          title="Relativity Space 3D Viewer"
+          style={{ width: '100%', height: '97vh', border: 'none' }}
+          allowFullScreen
+        ></iframe>
+      </div>
+      <div className="project-tech">
+        <span>React</span>
+        <span>Typescript</span>
+        <span>Three.js</span>
+        <span>Javascript</span>
+      </div>
+      <a
+        href="https://jvuo728.github.io/three.js-viewer/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-link"
+      >
+        View Full Project →
+      </a>
+    </div>
+    <div className="project">
       <h3>Clustering-Based School Assignment Model for SFUSD</h3>
       <p>
         As part of UC Berkeley's Fall 2024 Datathon, where my team won 2nd
@@ -12,8 +40,8 @@ const Projects: React.FC = () => (
         elementary schools in a way that promoted racial diversity and income
         equity. We used demographic, income, and census data to build a
         permutation-based clustering algorithm and visualized the results
-        using GeoPandas and Folium. The project combined data science,
-        geospatial analysis, and a strong emphasis on social impact.
+        using GeoPandas and Folium. The project combined data science, 
+        machine learning,and a strong emphasis on social impact.
       </p>
       <div className="project-demo">
         <div className="map-container">
@@ -33,19 +61,6 @@ const Projects: React.FC = () => (
       >
         View Full Project →
       </a>
-    </div>
-
-    <div className="project">
-      <h3>3D Model Viewer</h3>
-      <p>
-        Built a Three.js viewer for interactive CAD models with measurement
-        tools and REST API integration.
-      </p>
-      <div className="project-tech">
-        <span>Three.js</span>
-        <span>JavaScript</span>
-        <span>REST API</span>
-      </div>
     </div>
   </section>
 );

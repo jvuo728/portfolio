@@ -1,5 +1,5 @@
-import React from 'react';
-import Map from './Map';
+import React from "react";
+import Map from "./Map";
 
 const Projects: React.FC = () => (
   <section id="projects">
@@ -7,13 +7,19 @@ const Projects: React.FC = () => (
     <div className="project">
       <h3>Relativity Space: 3D Model Renderer (Lead Frontend Developer)</h3>
       <p>
-        <b>My Contribution:</b> As the <b>lead frontend developer</b> on a team contracted by <b>Relativity Space</b>, I architected and built the interactive 3D CAD model renderer using React, Three.js, and TypeScript. The final product was delivered as part of a secure web platform with user authentication and a Postgres database. This embedded viewer is an adaptation of my core contribution, showcasing the renderer's interactive features for my portfolio.
+        <b>My Contribution:</b> As the <b>lead frontend developer</b> on a team
+        contracted by <b>Relativity Space</b>, I architected and built the
+        interactive 3D CAD model renderer using React, Three.js, and TypeScript.
+        The final product was delivered as part of a secure web platform with
+        user authentication and a Postgres database. This embedded viewer is an
+        adaptation of my core contribution, showcasing the renderer's
+        interactive features for my portfolio.
       </p>
       <div className="project-demo">
         <iframe
           src="https://jvuo728.github.io/three.js-viewer/"
           title="Relativity Space 3D Viewer"
-          style={{ width: '100%', height: '97vh', border: 'none' }}
+          style={{ width: "100%", height: "97vh", border: "none" }}
           allowFullScreen
         ></iframe>
       </div>
@@ -39,9 +45,9 @@ const Projects: React.FC = () => (
         place, I helped develop a model to assign San Francisco students to
         elementary schools in a way that promoted racial diversity and income
         equity. We used demographic, income, and census data to build a
-        permutation-based clustering algorithm and visualized the results
-        using GeoPandas and Folium. The project combined data science, 
-        machine learning,and a strong emphasis on social impact.
+        permutation-based clustering algorithm and visualized the results using
+        GeoPandas and Folium. The project combined data science, machine
+        learning, and a strong emphasis on social impact.
       </p>
       <div className="project-demo">
         <div className="map-container">
@@ -65,4 +71,4 @@ const Projects: React.FC = () => (
   </section>
 );
 
-export default Projects; 
+export default Projects;

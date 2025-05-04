@@ -114,7 +114,7 @@ const Map: React.FC = () => {
     }
 
     // Fetch and add GeoJSON
-    fetch('/assets/block_groups.geojson')
+    fetch(`${import.meta.env.BASE_URL}assets/block_groups.geojson`)
       .then(res => {
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
         return res.json();
